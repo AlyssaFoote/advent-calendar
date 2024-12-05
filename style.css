@@ -91,6 +91,12 @@ textarea:not([rows]) {
 
 /* Magic Goes Here */
 
+body {
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -98,5 +104,27 @@ header {
   align-items: center;
   width: 100vw;
   height: auto;
-  /* box-sizing: border-box; */
+  background-color: rgb(69, 4, 50);
+  padding: 4em 0px;
+}
+
+#mainContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100vw;
+  height: 100vh;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: rgb(69, 4, 50);
+}
+
+#calendar,
+#meme-display {
+  flex: 1;
+  max-width: 50%;
+  background: lightblue;
+  min-height: 200px;
 }
