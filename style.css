@@ -95,6 +95,7 @@ body {
   height: 100vh;
   background-color: black;
   margin: 0;
+  font-family: 'Agdasima', sans-serif;
 }
 
 header {
@@ -119,6 +120,12 @@ header {
   padding: 20px;
   box-sizing: border-box;
   background-color: rgb(69, 4, 50);
+}
+
+#calendar {
+  display: grid;
+  grid-template: auto repeat(6, 1fr) / repeat(7, 1fr);
+  gap: 10px;
 }
 
 #calendar,
