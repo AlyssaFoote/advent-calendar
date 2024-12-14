@@ -96,6 +96,7 @@ body {
   background-color: black;
   margin: 0;
   font-family: 'Agdasima', sans-serif;
+  background-color: rgb(69, 4, 50);
 }
 
 header {
@@ -105,14 +106,14 @@ header {
   align-items: center;
   width: 100vw;
   height: auto;
-  background-color: rgb(69, 4, 50);
+
   padding: 4em 0px;
 }
 
 #mainContent {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: stretch;
   width: 100vw;
   height: 100vh;
@@ -126,12 +127,24 @@ header {
   display: grid;
   grid-template: auto repeat(6, 1fr) / repeat(7, 1fr);
   gap: 10px;
+  text-align: center;
 }
 
 #calendar,
 #meme-display {
   flex: 1;
-  max-width: 50%;
-  background: lightblue;
-  min-height: 200px;
+  max-width: 460px;
+  /* background: lightblue; */
+}
+
+.days {
+  font-size: 4em;
+  color: #f82400;
+}
+
+.eachDay {
+  font-family: 'Teko', sans-serif;
+  font-size: 2.5em;
+  color: #3884f2;
+  font-weight: 300;
 }
