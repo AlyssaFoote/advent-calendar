@@ -23,10 +23,26 @@ for (let index = 0; index < dayOfWeek; index++) {
   calendar.appendChild(blankCell);
 }
 
+// Get the current date for individual styling
+
+function getTodaysDate() {
+  const today = new Date().getDate();
+  return today;
+}
+
+let today = getTodaysDate();
+
 // Populate the rest of the calendar with the days of the week
-for (let index = 1; index <= 31; index++) {
+for (let index = 1; index <= 25; index++) {
   const calendarCell = document.createElement('div');
   calendarCell.textContent = index;
-  calendarCell.classList.add('days');
+
+  // Add class if the day matches today's date
+  if (today === index) {
+    calendarCell.classList.add('today');
+  } else {
+    calendarCell.classList.add('eachDay');
+  }
+
   calendar.appendChild(calendarCell);
 }
