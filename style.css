@@ -128,17 +128,18 @@ header {
   grid-template: auto repeat(6, 1fr) / repeat(7, 1fr);
   gap: 10px;
   text-align: center;
+  justify-items: center;
+  align-items: center;
 }
 
 #calendar,
 #meme-display {
   flex: 1;
   max-width: 460px;
-  /* background: lightblue; */
 }
 
 .days {
-  font-size: 4em;
+  font-size: 5em;
   color: #f82400;
 }
 
@@ -147,4 +148,11 @@ header {
   font-size: 2.5em;
   color: #3884f2;
   font-weight: 300;
+}
+
+.today {
+  font-family: 'Teko', sans-serif;
+  font-size: 4em;
+  color: #e7bcdc;
+  font-weight: 400;
 }
