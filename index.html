@@ -11,8 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Teko:wght@300..700&display=swap"
       rel="stylesheet"
@@ -20,7 +18,8 @@
   </head>
   <body>
     <header class="heading">
-      <img src="img/DEC 2024.svg" alt="December 2024" srcset="" />
+      <h6 class="title">A Cursed Meme Advent Calendar</h6>
+      <h1 class="month">DECEMBER 2025</h1>
     </header>
 
     <section id="mainContent">
@@ -28,11 +27,67 @@
 
       <div id="meme-display" class="meme-container">
         <div id="present-container" class="present-container">
-          <div id="present-animation"></div>
-          <div id="meme-content" class="hidden"></div>
+          <div id="present-animation">
+            <canvas id="canvas" width="458" height="458"></canvas>
+          </div>
+          <div id="meme-content" class="hidden">
+            <img src="memes/14.png" alt="a dank meme for your consideration" />
+          </div>
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/@rive-app/canvas"></script>
+    <script>
+      const riveDay = new Date().getDate(); // Get today's date
+      // const riveDay = 18; // For testing purposes
+
+      // Function to determine the artboard based on today's date
+      const getArtboard = () => {
+        if (riveDay >= 1 && riveDay <= 7) {
+          return 'Week One';
+        } else if (riveDay >= 8 && riveDay <= 14) {
+          return 'Week Two';
+        } else if (riveDay >= 15 && riveDay <= 21) {
+          return 'Week Three';
+        } else if (riveDay === 22) {
+          return 'Day 22';
+        } else if (riveDay === 23) {
+          return 'Day 23';
+        } else if (riveDay === 24) {
+          return 'Day 24';
+        } else if (riveDay === 25) {
+          return 'Day 25';
+        } else {
+          console.error('Invalid date.');
+        }
+      };
+
+      // Determine the artboard before creating the Rive instance
+      const selectedArtboard = getArtboard();
+
+      // Initialize Rive with the selected artboard
+      const r = new rive.Rive({
+        src: 'animation/christmas_present.riv',
+        canvas: document.getElementById('canvas'),
+        autoplay: true,
+        artboard: selectedArtboard,
+        stateMachines: 'State Machine 1',
+        onLoad: () => {
+          r.resizeDrawingSurfaceToCanvas();
+
+          // Set the "riveDay" input dynamically based on the current date
+          const inputs = r.stateMachineInputs('State Machine 1');
+          const presentDay = inputs.find((i) => i.name === 'day');
+          if (presentDay) {
+            presentDay.value = riveDay;
+          } else {
+            console.error("Input 'day' not found in State Machine 1.");
+          }
+        },
+      });
+    </script>
+
     <script src="script.js"></script>
   </body>
 </html>

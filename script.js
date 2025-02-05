@@ -1,48 +1,49 @@
-// Dynamically adding dates to the calendar
-// For each grid box, add the days of the week
-// via .TextContent
+const meme = document.querySelector('#meme-content img');
 
+// Generate the calendar
 const calendar = document.querySelector('#calendar');
-const daysOfWeek = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+const daysOfWeek = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
 
-for (day of daysOfWeek) {
+// Add days of the week
+daysOfWeek.forEach((day) => {
   const dayCell = document.createElement('div');
   dayCell.textContent = day;
   dayCell.classList.add('days');
   calendar.appendChild(dayCell);
-}
+});
 
-const decemberFirst = new Date(2024, 11, 1);
-const dayOfWeek = decemberFirst.getDay();
-
-// Depending on which day of the week December 1st falls on,
-// create that many blank number of cells in the grid
-
-for (let index = 0; index < dayOfWeek; index++) {
+// Get December 1st and determine blank cells
+const decemberFirst = new Date(2025, 11, 1);
+const firstDayOfWeek = decemberFirst.getDay();
+for (let i = 0; i < firstDayOfWeek; i++) {
   const blankCell = document.createElement('div');
   calendar.appendChild(blankCell);
 }
 
-// Get the current date for individual styling
+// Get today's date for styling
+const today = new Date().getDate();
 
-function getTodaysDate() {
-  const today = new Date().getDate();
-  return today;
-}
+// Populate the calendar with days
+for (let day = 1; day <= 25; day++) {
+  const dayCell = document.createElement('div');
+  dayCell.textContent = day;
 
-let today = getTodaysDate();
-
-// Populate the rest of the calendar with the days of the week
-for (let index = 1; index <= 25; index++) {
-  const calendarCell = document.createElement('div');
-  calendarCell.textContent = index;
-
-  // Add class if the day matches today's date
-  if (today === index) {
-    calendarCell.classList.add('today');
+  if (day === today) {
+    dayCell.classList.add('today');
+    meme.setAttribute('src', `memes/${today}.png`);
+  } else if (day < today) {
+    dayCell.classList.add('past');
   } else {
-    calendarCell.classList.add('eachDay');
+    dayCell.classList.add('eachDay');
   }
 
-  calendar.appendChild(calendarCell);
+  calendar.appendChild(dayCell);
 }
+
+// Handle click to reveal the meme
+const presentContainer = document.querySelector('#present-container');
+const memeContent = document.querySelector('#meme-content');
+
+presentContainer.addEventListener('click', () => {
+  memeContent.classList.remove('hidden'); // Show the meme!!!
+});
