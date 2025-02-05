@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.9.6, SVG Export Plug-In . SVG Version: 9.03 Build 54986)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 458 458" style="enable-background:new 0 0 458 458;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#122D1C;}
+	.st1{fill:#3884F2;}
+	.st2{fill:#F5F5F5;}
+	.st3{fill:#631733;}
+	.st4{fill:#E7BCDC;}
+	.st5{fill:#F82400;}
+</style>
+<g id="Top_Left_Square">
+	<rect id="Right_Top_Square" class="st0" width="229" height="230"/>
+</g>
+<g id="Top_Right_Square">
+	<rect id="Left_Bottom_Square" x="229" class="st0" width="229" height="230"/>
+</g>
+<g id="Bottom_Right_Square">
+	
+		<rect id="Left_Top_Square_00000070818307317584561130000002786587625786804636_" x="229" y="228" class="st0" width="229" height="230"/>
+</g>
+<g id="Bottom_Left_Square">
+	<rect id="Left_Top_Square_00000060004906019476334040000006909754606393761944_" y="228" class="st0" width="229" height="230"/>
+</g>
+<g id="Center_Ribbon">
+	<rect id="Vertical_blue_Ribbon" x="210" class="st1" width="37" height="458"/>
+</g>
+<g id="Horizontal_Ribbon">
+	<rect id="Horizontal_Blue_Ribbon" x="-0.5" y="210.5" class="st1" width="458" height="37"/>
+</g>
+<g id="Right_Ribbon_00000046303282610912370050000001234945082160261787_">
+	<path id="Right_Ribbon" class="st2" d="M222.7,215.2l149.9,181l-9.5-72.9l72.9-9.5L222.7,215.2z"/>
+</g>
+<g id="Left_Ribbon_00000064340629953797985860000013197045482484551053_">
+	<path id="Left_Ribbon" class="st2" d="M235.3,215.2l-149.9,181l9.5-72.9L22,313.8L235.3,215.2z"/>
+</g>
+<g id="Left_Top_Ribbon_00000173131630968348931310000011558907227794684333_">
+	<g id="Right_Top_Ribbon">
+		<path class="st2" d="M244.2,225.7l177.2-29.8c14.6-2.5,22.2-18.9,14.5-31.6l-50.6-83.6c-6.6-10.9-22-11.7-29.7-1.6L244.2,225.7z"
+			/>
+		<path class="st3" d="M258.5,208.6l121-106.5c8.5-7.5,8.9-20.7,0.8-28.6c-21.9-15-52-7.1-63.7,16.7L258.5,208.6z"/>
+	</g>
+</g>
+<g id="Right_Top_Ribbon_00000159449349059342764350000009961158355790550672_">
+	<g id="Left_Top_Ribbon">
+		<path class="st2" d="M218.7,228.8L41.5,198.9C26.9,196.5,19.3,180,27,167.4l50.6-83.6c6.6-10.9,22-11.7,29.7-1.6L218.7,228.8z"/>
+		<path class="st3" d="M204.3,211.6l-121-106.5c-8.5-7.5-8.9-20.7-0.8-28.6c21.9-15,52-7.1,63.7,16.7L204.3,211.6z"/>
+	</g>
+</g>
+<g id="Ribbon_Outer">
+	<circle id="Outer_Ribbon_Button" class="st4" cx="228" cy="225" r="51"/>
+</g>
+<g id="Ribbon_Center">
+	<circle id="Ribbon_Button" class="st5" cx="228" cy="225" r="31"/>
+</g>
+</svg>
