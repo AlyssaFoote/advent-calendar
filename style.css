@@ -256,7 +256,7 @@ body {
   #mainContent {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     padding: 1em;
   }
 
@@ -264,8 +264,8 @@ body {
   #calendar {
     width: 90%;
     max-width: none;
-    grid-template-rows: auto repeat(4, 0.25fr);
-    /* height: 100px !important; */
+    grid-template-rows: auto repeat(4, 0.5fr);
+    height: 300px;
   }
 
   /* Meme Display Responsiveness */
