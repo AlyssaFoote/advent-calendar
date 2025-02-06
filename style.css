@@ -134,7 +134,7 @@ body {
   align-items: center;
   max-width: 100vw;
   /* height: auto; */
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   min-width: 100%;
   overflow: hidden;
 }
@@ -243,7 +243,7 @@ body {
   #mainContent {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
     padding: 1em;
   }
 
@@ -270,5 +270,12 @@ body {
   #present-animation canvas {
     width: 100%;
     height: 100%;
+  }
+
+  /* Adjust Header Size */
+  .month {
+    text-align: center;
+    width: 100%;
+    /* line-height: 0.1em; */
   }
 }

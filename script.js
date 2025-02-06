@@ -44,6 +44,6 @@ for (let day = 1; day <= 25; day++) {
 const presentContainer = document.querySelector('#present-container');
 const memeContent = document.querySelector('#meme-content');
 
-presentContainer.addEventListener('click', () => {
+presentContainer.addEventListener('pointerdown', () => {
   memeContent.classList.remove('hidden'); // Show the meme!!!
 });
