@@ -240,6 +240,19 @@ body {
 
 /* Stacking Layout for Smaller Screens */
 @media (max-width: 800px) {
+  .days {
+    font-size: 2.5em;
+  }
+
+  .past,
+  .eachDay {
+    font-size: 2em;
+  }
+
+  .today {
+    font-size: 3em;
+  }
+
   #mainContent {
     flex-direction: column-reverse;
     align-items: center;
@@ -251,7 +264,8 @@ body {
   #calendar {
     width: 90%;
     max-width: none;
-    height: 300px;
+    grid-template-rows: auto repeat(4, 0.65fr);
+    /* height: 100px !important; */
   }
 
   /* Meme Display Responsiveness */
