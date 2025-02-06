@@ -47,3 +47,10 @@ const memeContent = document.querySelector('#meme-content');
 presentContainer.addEventListener('pointerdown', () => {
   memeContent.classList.remove('hidden'); // Show the meme!!!
 });
+
+const canvas = document.querySelector('canvas');
+canvas.addEventListener('pointerdown', (e) => {
+  // your logic to open the present
+  // once the present is fully open:
+  canvas.style.pointerEvents = 'none';
+});
