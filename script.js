@@ -50,7 +50,5 @@ presentContainer.addEventListener('pointerdown', () => {
 
 const canvas = document.querySelector('canvas');
 canvas.addEventListener('pointerdown', (e) => {
-  // your logic to open the present
-  // once the present is fully open:
   canvas.style.pointerEvents = 'none';
 });
