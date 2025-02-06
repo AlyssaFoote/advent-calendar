@@ -264,7 +264,7 @@ body {
   #calendar {
     width: 90%;
     max-width: none;
-    grid-template-rows: auto repeat(4, 0.65fr);
+    grid-template-rows: auto repeat(4, 0.25fr);
     /* height: 100px !important; */
   }
 
