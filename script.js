@@ -45,7 +45,9 @@ const presentContainer = document.querySelector('#present-container');
 const memeContent = document.querySelector('#meme-content');
 
 presentContainer.addEventListener('pointerdown', () => {
-  memeContent.classList.remove('hidden'); // Show the meme!!!
+  setTimeout(() => {
+    memeContent.classList.remove('hidden');
+  }, 200);
 });
 
 const canvas = document.querySelector('canvas');
