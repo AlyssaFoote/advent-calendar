@@ -36,7 +36,7 @@ for (let day = 1; day <= 25; day++) {
   } else {
     dayCell.classList.add('eachDay');
   }
-gi
+
   calendar.appendChild(dayCell);
 }
 
